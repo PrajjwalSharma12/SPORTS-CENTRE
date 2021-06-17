@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+.nav-bar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  
+}
+.nav-bar-container{
+    display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.nav-bar-items{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 125px;
+    text-decoration:transparent;
+    height: 100%;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.title{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7a30af, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8944bb, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  
+}
+.home{
+  color: #fff;
+   margin-left: 35rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   text-decoration: none;
+}
+.cricket,.football,.esports{
+  color: #fff;
+    margin-left: 3rem;
+    text-decoration: none;
+}
+.home:hover,.cricket:hover,.football:hover,.esports:hover{
+    color: #dd1818;
+    transition: all 0.3s ease;
+    cursor:pointer;
+}
+#home{
+    border: 2px solid black;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(cg1.jpg);
+    background-size:auto;
+  
+    background-repeat:inherit;
+    position: relative;
+    width:100%;
+    
+   
+    padding:200px 0;
+    
+    
+}
+
+.home-description {
+   width:90%;
+   color: #fff;
+   position:absolute;
+   top:73%;
+   left:5%;
+   
+   font-weight: 700;
+   font-size: 2rem;
+
+   
+   
+    
+   
+    
+  }
+  .highlight {
+    border-bottom: 4px solid rgb(250, 104, 6);
+  }
+  .cricket-section,.football-section,.esports-section{
+    background-color: #131313;
+    padding: 10rem 0;
+  }
+  .cricket-container,.football-container,.esports-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+  }
+  .cricket-discription,.football-discription{
+    color: #fff;
+    width: 100%;
+ margin-left: 80rem;
+  font-size: 2rem;
+  font-weight: 700;
+    background-color: #b13b3b;
+    background-image: linear-gradient(to top, #f12121 0%, #f5550b 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    
+    white-space: nowrap;
+  }
+  .cricket-btn,.football-btn{
+    font-size: 1.8rem;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-left:40rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    
+    
+  }
+  .cricket-btn:after,.football-btn:after,.esports-btn:after,.back-btn:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #e20749;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  .cricket-btn:hover,.football-btn:hover,.esports-btn:hover,.back-btn:hover {
+    color: #fff;
+  }
+  
+  .cricket-btn:hover:after,.football-btn:hover:after,.esports-btn:hover:after,.back-btn:hover:after {
+    width: 100%;
+  }
+  .cricket-section{
+    background:url(cg2.jpg);
+    background-position:left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+  }
+  .football-section{
+    background:url(cg4.jpg);
+    background-position:left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .esports-section{
+    background:url(cg6.jpg);
+    background-position:top;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .esports-discription{
+    color:rgb(250, 195, 16);
+    width: 9%;
+ margin-left: 40rem;
+  font-size: 2rem;
+  font-weight: 700;
+
+     text-transform: uppercase;
+   
+    
+    
+
+
+  }
+  .esports-btn{
+    font-size: 1.8rem;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    margin-left:50rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+    
+
+  }
+  .back-btn{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+ 
+   
+    margin-left: 35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    z-index: 2;
+    color: #fff;
+
+  }
+ 
+   
+  
