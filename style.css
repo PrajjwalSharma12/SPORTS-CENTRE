@@ -258,6 +258,17 @@
     color: #fff;
 
   }
+ #crick,#fb,#es{
+   background-color: black;
+   color:#fff;
+   padding: 0.5rem ;
+   font-size: 1.4rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ 
+ }
  
    
   

@@ -8,6 +8,54 @@
     <title>Document</title>
     
 </head>
+<script>
+    const url="https://newsapi.org/v2/everything?from=2021-05-25&sortBy=publishedAt&apiKey=ff004a20e84a4836b172b8ac3f8974d5&language=en&qInTitle=bgmi OR valorant OR freefire";
+  
+   
+
+     const getData = async(url) =>{
+         const response = await fetch(url, {
+             method: "GET",
+            
+            
+             });
+        const data = await response.json();
+        const ndata=data.articles;
+       
+        
+         appendData(ndata);
+         console.log(ndata);
+
+         
+     }
+     getData(url);
+    
+     
+     
+     function appendData(ndata) {
+var mainContainer = document.getElementById("es");
+for (var i = 0; i < ndata.length; i++) {
+    // if(i==1||i==9||i==11){
+  var div = document.createElement("div");
+  var div2=document.createElement("div");
+  div.innerHTML=`<img src="${ndata[i].urlToImage}"width=\'450px\' height=\'300px\'>`;
+  div2.innerHTML= ndata[i].content+"\n"+ndata[i].description+"\n"+ndata[i].title+"\n";
+
+  console.log(ndata[i].urlToImage);
+
+  
+  
+  mainContainer.appendChild(div);
+  mainContainer.appendChild(div2)
+    // }
+}
+}
+
+
+
+    
+
+</script>
 <body>
     <div class="nav-bar">
         <div class="nav-bar-container">
@@ -17,7 +65,7 @@
             </div>
         </div>
         </div>
-        <div><p class="esport">esports</p></div>
+        <div id="es"></div>
     
 </body>
 <script src="script.js"></script>
